@@ -1,1 +1,4 @@
-The goal of this project is to transfer learn on the yamnet model and run inference on the coral edge tpu. Every attempt to do so will be done on a new numbered branch. The yamnet branch is a raw fork of the yamnet repo that I'll use to work off of.
+I will attempt to quantize only yamnet layer weights.
+
+I will start by loading yamnet with the yamnet.h5 weights files, then using contrib.graph_editor tool to quantize the layers.
+I may have to add a quantize layer to match the yamnet/classification model on tfhub
