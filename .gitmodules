@@ -1,0 +1,3 @@
+[submodule "tflite-models-audioset-yamnet"]
+	path = tflite-models-audioset-yamnet
+	url = https://github.com/antonyharfield/tflite-models-audioset-yamnet.git

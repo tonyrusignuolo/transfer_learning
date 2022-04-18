@@ -1,0 +1,17 @@
+Edge TPU Compiler version 16.0.384591198
+Input: dogs_and_cats.tflite
+Output: dogs_and_cats_edgetpu.tflite
+
+Operator                       Count      Status
+
+CONV_2D                        14         Operation is working on an unsupported data type
+MUL                            3          Operation is working on an unsupported data type
+MEAN                           2          Operation is working on an unsupported data type
+ADD                            1          Operation is working on an unsupported data type
+RESHAPE                        4          Operation is working on an unsupported data type
+FULLY_CONNECTED                5          Operation is working on an unsupported data type
+LOG                            1          Operation is working on an unsupported data type
+PAD                            1          Operation is working on an unsupported data type
+SQRT                           1          Operation is working on an unsupported data type
+GATHER                         2          Operation is working on an unsupported data type
+DEPTHWISE_CONV_2D              13         Operation is working on an unsupported data type

@@ -1,0 +1,2 @@
+This was a basic attempt to transfer learn by running the code from [here](https://www.tensorflow.org/tutorials/audio/transfer_learning_audio).
+It failed because the model input is dynamically allicated and the model isn't quantized
