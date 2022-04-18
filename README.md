@@ -1,3 +1,5 @@
+This is a fork of the [original yamnet repo](https://github.com/tensorflow/models/tree/master/research/audioset/yamnet).
+
 # YAMNet
 
 YAMNet is a pretrained deep net that predicts 521 audio event classes based on
