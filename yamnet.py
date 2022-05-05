@@ -146,13 +146,27 @@ def yamnet_frames_model(params):
         log_mel_spectrogram,
         features,
     ) = features_lib.waveform_to_log_mel_spectrogram_patches(waveform, params)
+    # quant_features = tf.quantization.quantize(
+    #     features,
+    #     -2700.0,
+    #     2700.0,
+    #     tf.dtypes.quint8,
+    #     mode='MIN_COMBINED',
+    #     round_mode='HALF_AWAY_FROM_ZERO',
+    #     name=None,
+    #     narrow_range=False,
+    #     axis=None,
+    #     ensure_minimum_range=0.01
+    # )
     predictions, embeddings = yamnet(features, params)
+    # predictions, embeddings = yamnet(quant_features, params)
     frames_model = Model(
         name="yamnet_frames",
         inputs=waveform,
         outputs=[predictions, embeddings, log_mel_spectrogram],
     )
     return frames_model
+    # return [features, frames_model]
 
 
 def class_names(class_map_csv):
